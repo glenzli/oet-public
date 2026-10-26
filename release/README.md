@@ -37,11 +37,18 @@ handoff with a reserved Zenodo version DOI:
 scripts/release/oet-release-import.sh --tag oet-vols-01-rc.1
 ```
 
-Review the imported public tree, then commit and tag it locally:
+Review the imported public tree and build its exported Lean project. Commit the
+reviewed snapshot through the managed direct-commit workflow with Git signing
+enabled, then create its signed local tag:
 
 ```bash
-scripts/release/oet-release-tag.sh --tag oet-vols-01-rc.1
+scripts/release/oet-release-tag.sh --tag oet-vols-01-rc.1 --commit HEAD
 ```
+
+The tag command never stages or commits files. It requires a clean working tree
+and a verifiable signed commit at HEAD. Pass the managed commit hash instead of
+`HEAD` to bind the operation to that exact reviewed snapshot. Existing tags are
+never replaced.
 
 Create the public-source archive and final manifest:
 
@@ -49,12 +56,17 @@ Create the public-source archive and final manifest:
 scripts/release/oet-release-finalize.sh --tag oet-vols-01-rc.1
 ```
 
-Sign the manifest. Cosign prints a URL; keep the command running and complete
-Google login in a browser:
+Sign the manifest. By default Cosign uses browser login with a local callback;
+keep the command running and complete Google login in the browser:
 
 ```bash
 scripts/release/oet-release-sign.sh --tag oet-vols-01-rc.1
 ```
+
+If the local callback is unavailable, explicitly select `--auth-flow device`.
+The same setting can be supplied through `OET_SIGSTORE_AUTH_FLOW` or
+`git config --local oet.sigstoreAuthFlow normal`. The signer identity and issuer
+are verified regardless of the authentication flow.
 
 Upload the frozen files under `release/cache/<tag>/public-release/` to the
 Zenodo draft. After final review, publish the Zenodo record, then push the

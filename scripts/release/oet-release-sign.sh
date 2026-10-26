@@ -8,16 +8,19 @@ source "$script_dir/lib.sh"
 usage() {
   cat <<'USAGE'
 Usage:
-  oet-release-sign.sh --tag TAG [--identity EMAIL]
+  oet-release-sign.sh --tag TAG [--identity EMAIL] [--auth-flow normal|device]
 
-Signs RELEASE-MANIFEST.txt with Sigstore keyless device flow. Cosign prints a
-URL; keep the command running and complete Google login in a browser.
+Signs RELEASE-MANIFEST.txt with Sigstore keyless browser authentication. The
+default normal flow uses a local callback. Keep the command running and
+complete Google login in the browser. The flow can also be configured with
+OET_SIGSTORE_AUTH_FLOW or the local oet.sigstoreAuthFlow Git setting.
 USAGE
 }
 
 root="$(oet_repo_root)"
 tag=""
 identity=""
+auth_flow=""
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --tag)
@@ -36,6 +39,14 @@ while [[ $# -gt 0 ]]; do
       identity="${1#--identity=}"
       shift
       ;;
+    --auth-flow)
+      auth_flow="${2:-}"
+      shift 2
+      ;;
+    --auth-flow=*)
+      auth_flow="${1#--auth-flow=}"
+      shift
+      ;;
     -h|--help)
       usage
       exit 0
@@ -51,6 +62,11 @@ done
 oet_require_tag "$tag"
 identity="${identity:-$(oet_config oet.sigstoreIdentity OET_SIGSTORE_IDENTITY)}"
 issuer="$(oet_config oet.sigstoreIssuer OET_SIGSTORE_ISSUER https://accounts.google.com)"
+auth_flow="${auth_flow:-$(oet_config oet.sigstoreAuthFlow OET_SIGSTORE_AUTH_FLOW normal)}"
+case "$auth_flow" in
+  normal|device) ;;
+  *) oet_die "Unsupported interactive Sigstore auth flow: $auth_flow (use normal or device)" ;;
+esac
 [[ -n "$identity" ]] || oet_die "Configure the signer with: git config --local oet.sigstoreIdentity <email>"
 command -v cosign >/dev/null 2>&1 || oet_die "cosign is required"
 
@@ -61,10 +77,10 @@ checksums="$assets/SHA256SUMS.txt"
 [[ -f "$manifest" ]] || oet_die "Missing finalized manifest: $manifest"
 [[ ! -e "$bundle" && ! -e "$checksums" ]] || oet_die "Release is already signed or checksummed; finalize again only before publication."
 
-echo "Cosign will print a browser URL. Open it and complete Google login as: $identity"
+echo "Cosign will use the $auth_flow browser login flow. Complete Google login as: $identity"
 cosign --timeout 10m sign-blob \
   --yes \
-  --fulcio-auth-flow=device \
+  --fulcio-auth-flow="$auth_flow" \
   --bundle "$bundle" \
   "$manifest"
 

@@ -8,15 +8,18 @@ source "$script_dir/lib.sh"
 usage() {
   cat <<'USAGE'
 Usage:
-  oet-release-tag.sh --tag TAG
+  oet-release-tag.sh --tag TAG [--commit COMMIT]
 
-Commits the imported public snapshot and creates a signed local public tag.
-Nothing is pushed and no platform Release is created.
+Creates a signed local public tag for an already committed public snapshot.
+COMMIT defaults to HEAD and must match the clean, signed current HEAD. Commit
+the imported tree through the managed workflow first; this command never
+stages or commits files. Nothing is pushed and no platform Release is created.
 USAGE
 }
 
 root="$(oet_repo_root)"
 tag=""
+commit="HEAD"
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --tag)
@@ -25,6 +28,14 @@ while [[ $# -gt 0 ]]; do
       ;;
     --tag=*)
       tag="${1#--tag=}"
+      shift
+      ;;
+    --commit)
+      commit="${2:-}"
+      shift 2
+      ;;
+    --commit=*)
+      commit="${1#--commit=}"
       shift
       ;;
     -h|--help)
@@ -47,13 +58,13 @@ metadata="$cache/handoff-metadata.json"
 if git -C "$root" rev-parse --verify --quiet "refs/tags/$tag" >/dev/null; then
   oet_die "Public tag already exists: $tag"
 fi
-if [[ -z "$(git -C "$root" status --porcelain)" ]]; then
-  oet_die "No imported public changes are available to commit."
-fi
+[[ -z "$(git -C "$root" status --porcelain)" ]] || oet_die "Commit the imported public snapshot through the managed workflow before tagging; oet-public must be clean."
+[[ -n "$commit" ]] || oet_die "The expected public commit must not be empty."
+public_commit="$(git -C "$root" rev-parse --verify --end-of-options "$commit^{commit}")" || oet_die "Cannot resolve the expected public commit: $commit"
+[[ "$public_commit" == "$(git -C "$root" rev-parse HEAD)" ]] || oet_die "The expected public commit does not match HEAD."
+git -C "$root" verify-commit "$public_commit" >/dev/null 2>&1 || oet_die "Public commit signature verification failed: $public_commit"
 
-git -C "$root" add -A
-git -C "$root" commit -S -m "Publish $tag public snapshot"
-git -C "$root" tag -s "$tag" -m "OET public release $tag"
+git -C "$root" tag -s "$tag" "$public_commit" -m "OET public release $tag"
 
 public_commit="$(git -C "$root" rev-parse "$tag^{commit}")"
 python3 - "$cache/public-metadata.json" "$tag" "$public_commit" <<'PY'
