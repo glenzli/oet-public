@@ -1,8 +1,14 @@
+
+<a id="oet-9e61c41837a10211"></a>
+
 ## 附录 D 习题解答
 
 本附录按习题所在章节的顺序给出解答。各题的假设与记号以相应题面及其所在小节为准。
 
 ### 基础
+
+
+<div data-mb-solution="oet-3250486e06e1af22" data-mb-for="oet-6f3c195f30ebebd6">
 
 **习题 1.1 的解答**：
 
@@ -10,19 +16,31 @@
 
 在 $U$ 内，半径为 $1$ 的 $d_1$-开球为 $\{a,c\}$、$\{b\}$，$d_2$-开球为 $\{a,b\}$、$\{c\}$。每种情形均需要且只需要两个中心，故
 
-$$\mathcal N_1(1,U)=\mathcal N_2(1,U)=2.$$
+$$
+\mathcal N_1(1,U)=\mathcal N_2(1,U)=2.
+$$
 
 任意两个不同点至少在一个分量下距离为 $1$，所以 $d_{\{1,2\}}=\max(d_1,d_2)$ 的半径 $1$ 开球都是单点集。因此
 
-$$\mathcal N_{\{1,2\}}(1,U)=3.$$
+$$
+\mathcal N_{\{1,2\}}(1,U)=3.
+$$
 
 **(ii)** 联合读数集合为
 
-$$\{(0,0),(1,0),(0,1)\}.$$
+$$
+\{(0,0),(1,0),(0,1)\}.
+$$
 
 虽然每个 $q_i$ 的值域都是 $\{0,1\}$，组合 $(1,1)$ 却没有对应的点。联合读数集合只是两个值域的笛卡尔积的真子集，两个读数不能任意组合；相应联合覆盖数也不等于两个单分量覆盖数之积。$\square$
 
 分量伪度量分别规定如何比较点，并不预设这些区分结果能够独立组合。
+
+</div>
+
+
+
+<div data-mb-solution="oet-fae22ddbcb1da764" data-mb-for="oet-5e432018e992f2d3">
 
 **习题 1.2 的解答**：
 
@@ -50,17 +68,27 @@ $$
 
 **(ii)** 对任意 $0<\eta\le1-\delta$，
 
-$$E_\delta(U)-E_{\delta+\eta}(U)=\log_2(m+1)-1.$$
+$$
+E_\delta(U)-E_{\delta+\eta}(U)=\log_2(m+1)-1.
+$$
 
 给定任意 $M>0$，取整数 $m\ge2$ 且 $m+1>2^{M+1}$，上式即大于 $M$。因此该增量没有与 $m$ 无关的上界，即使精度改变量 $\eta$ 任意小也是如此。$\square$
 
 精度略大于 $\delta$ 时，一整个点簇可以由一个中心覆盖；到精度 $\delta$ 时，簇内每个点都需要单独覆盖。低熵刻画的是指定精度下的覆盖复杂度，不能据此限制更细精度下的复杂度。
 
+</div>
+
+
+
+<div data-mb-solution="oet-9125a5b5bee94d56" data-mb-for="oet-92cd0a940e038231">
+
 **习题 1.3 的解答**：
 
 **(i)** 所有算子均保持 $\bot$，所以 $d(\phi(\bot),\psi(\bot))=0$。由于 $U$ 有限非空，在 $\mathcal X$ 上取上确界等于在 $U$ 上取最大值，故
 
-$$d_{\mathrm{op}}(\phi,\psi)=\sup_{x\in\mathcal X}d(\phi(x),\psi(x))=\max_{x\in U}d(\phi(x),\psi(x)).$$
+$$
+d_{\mathrm{op}}(\phi,\psi)=\sup_{x\in\mathcal X}d(\phi(x),\psi(x))=\max_{x\in U}d(\phi(x),\psi(x)).
+$$
 
 对于 $d_{\mathrm{op}}^{\mathrm{av}}$，自距零与对称性逐项成立。逐点应用三角不等式、求和并乘以 $1/n$，得到
 
@@ -71,7 +99,9 @@ $$
 
 若 $\phi\ne\bot_{\mathrm{op}}$，则存在 $x\in U$ 使 $\phi(x)\ne\bot$，相应求和项 $d(\phi(x),\bot)$ 为 $+\infty$。由于 $1/n>0$，有
 
-$$d_{\mathrm{op}}^{\mathrm{av}}(\phi,\bot_{\mathrm{op}})=+\infty.$$
+$$
+d_{\mathrm{op}}^{\mathrm{av}}(\phi,\bot_{\mathrm{op}})=+\infty.
+$$
 
 恒等算子提供非吸收算子，故所有公理均满足。
 
@@ -88,7 +118,13 @@ $$
 
 上确界记录最大的逐点距离，平均值还计入差异出现的输入点数量；在本题的离散度量下，对在 $U$ 上均有定义的两个算子，平均距离恰为输出不同的输入点所占比例。$\square$
 
+</div>
+
+
 ### 算子界
+
+
+<div data-mb-solution="oet-580f97e634e7ea13" data-mb-for="oet-b2cea3f1af318f29">
 
 **习题 2.1 的解答**：
 
@@ -133,71 +169,111 @@ $$
 
 两问保持映射 $\phi(s,t)=(s,s+t)$ 不变，改变的是规范结构。第一组规范的 $d_2$ 已经记录第一坐标的差异，因此允许 $L_{1\to2}=0$；改用只记录第二坐标差异的 $\widetilde d_2$ 后，任何 Lip 证书都必须满足 $M_{1\to2}\ge1$。映射的坐标依赖没有改变，但规范读取的差异改变了，上界中所需的分量项也随之改变。因此，解释 Lip 证书的零项时，必须结合所选的规范结构。
 
+</div>
+
+
+
+<div data-mb-solution="oet-76f9477eb8a341b9" data-mb-for="oet-6a98a58b5bc95360">
+
 **习题 2.2 的解答**：
 
 由 Lip 矩阵定义与 $L_{k\to j}=0$（$k\neq j$）：
 
-$$d_j(\phi(x), \phi(y)) \leq L_{j \to j} \cdot d_j(x, y).$$
+$$
+d_j(\phi(x), \phi(y)) \leq L_{j \to j} \cdot d_j(x, y).
+$$
 
 由 co-Lip 矩阵定义及各项非负，
 
-$$K_{j\to j}d_j(x,y)\le\sum_{k\in I}K_{k\to j}d_k(x,y)\le d_j(\phi(x),\phi(y)).$$
+$$
+K_{j\to j}d_j(x,y)\le\sum_{k\in I}K_{k\to j}d_k(x,y)\le d_j(\phi(x),\phi(y)).
+$$
 
 合并即得。$\square$
 
 若上述对角输入项条件对所有 $j \in I$ 均成立，则得到逐分量的标量双侧不等式。若进一步要求 $L_{j \to j}, K_{j \to j} < +\infty$，则得到有限标量双侧放缩界。
 
+</div>
+
+
 ### 算子局部退化
+
+
+<div data-mb-solution="oet-dbe28f0466504943" data-mb-for="oet-5a431d16f9d7ba6a">
 
 **习题 3.1 的解答**：
 
 **(i)** 由
 
-$$\phi(0)=-1,\qquad \phi(1)=1,$$
+$$
+\phi(0)=-1,\qquad \phi(1)=1,
+$$
 
 得到 $\phi(U)=\{-1,1\}$。这两个输出虽不相等，却满足
 
-$$d_i(-1,1)=\bigl||-1|-|1|\bigr|=0.$$
+$$
+d_i(-1,1)=\bigl||-1|-|1|\bigr|=0.
+$$
 
 结合自距为零，得到
 
-$$\operatorname{Fib}_{\phi,i}(\phi(0)\mid U)=U,$$
+$$
+\operatorname{Fib}_{\phi,i}(\phi(0)\mid U)=U,
+$$
 
 且 $i\in I_{\mathrm{const}}(\phi\mid U)$。
 
 再次作用后，$\phi^2(x)=4x-3$，从而
 
-$$\phi^2(0)=-3,\qquad \phi^2(1)=1,\qquad d_i(-3,1)=2>0.$$
+$$
+\phi^2(0)=-3,\qquad \phi^2(1)=1,\qquad d_i(-3,1)=2>0.
+$$
 
 因此
 
-$$\operatorname{Fib}_{\phi^2,i}(\phi^2(0)\mid U)=\{0\},$$
+$$
+\operatorname{Fib}_{\phi^2,i}(\phi^2(0)\mid U)=\{0\},
+$$
 
 且 $i$ 不属于 $\phi^2\mid U$ 的常值分量。又有
 
-$$d_i(\phi^2(0),0)=d_i(-3,0)=3>0,$$
+$$
+d_i(\phi^2(0),0)=d_i(-3,0)=3>0,
+$$
 
 故 $i$ 也不属于恒等分量。因此 $i\in I_{\mathrm{act}}(\phi^2\mid U)$。
 
 **(ii)** 不能。设替换后的算子为 $\widetilde\phi$，且存在 $c\in\mathbb R$，使得对所有 $x\in U$ 均有 $\widetilde\phi(x)=c$。则
 
-$$\widetilde\phi^2(x)=\widetilde\phi(c)\qquad(x\in U).$$
+$$
+\widetilde\phi^2(x)=\widetilde\phi(c)\qquad(x\in U).
+$$
 
 若 $\widetilde\phi(c)\ne\bot$，则自复合输出仍是同一个点，$0,1$ 仍落入同一计算纤维，$i$ 仍属于常值分量。若 $\widetilde\phi(c)=\bot$，则 $U\cap\operatorname{dom}(\widetilde\phi^2)=\varnothing$，此时不能在 $U$ 上按本章定义讨论计算纤维，也不构成纤维分离。$\square$
 
 第一问中的中间输出 $-1$ 与 $1$ 是不同的点，只是在所选伪度量下距离为零；再次作用的 $\phi$ 没有保持这对点的零距关系。落入同一计算纤维只表示当前输出在所选规范下零距，并不等同于输出点相同。
 
+</div>
+
+
+
+<div data-mb-solution="oet-c5c9191ff3f4d184" data-mb-for="oet-092ba6f495b988c1">
+
 **习题 3.2 的解答**：
 
 **(i)** 反设存在 $x\in U$，使得
 
-$$0<d_i(x,y)<r^{\mathrm N}_{\phi,i,j}(y\mid U).$$
+$$
+0<d_i(x,y)<r^{\mathrm N}_{\phi,i,j}(y\mid U).
+$$
 
 由零化半径的上确界定义，存在有限正半径 $\rho>d_i(x,y)$，使得
 
-$$B_i(y,\rho)\cap U\subseteq\operatorname{Fib}_{\phi,j}(\phi(y)\mid U).$$
+$$
+B_i(y,\rho)\cap U\subseteq\operatorname{Fib}_{\phi,j}(\phi(y)\mid U).
+$$
 
-于是 $x\in B_i(y,\rho)\cap U$，故 $d_j(\phi(x),\phi(y))=0$。另一方面，由 co-Lip 下界（§ 2.1）及各项非负，
+于是 $x\in B_i(y,\rho)\cap U$，故 $d_j(\phi(x),\phi(y))=0$。另一方面，由 co-Lip 下界（[§ 2.1](<02-operator-bounds.md#user-content-oet-af85899693cc8750>)）及各项非负，
 
 $$
 0=d_j(\phi(x),\phi(y))
@@ -210,27 +286,43 @@ $$
 
 **(ii)** 任取 $x,y\in U$。由下确界定义，
 
-$$0<\underline{r}^{\mathrm N}_{\phi,i,j}\big|_U\leq r^{\mathrm N}_{\phi,i,j}(y\mid U).$$
+$$
+0<\underline{r}^{\mathrm N}_{\phi,i,j}\big|_U\leq r^{\mathrm N}_{\phi,i,j}(y\mid U).
+$$
 
 若 $d_i(x,y)\ne0$，则由 (i) 得到
 
-$$d_i(x,y)\geq r^{\mathrm N}_{\phi,i,j}(y\mid U)\geq\underline{r}^{\mathrm N}_{\phi,i,j}\big|_U.$$
+$$
+d_i(x,y)\geq r^{\mathrm N}_{\phi,i,j}(y\mid U)\geq\underline{r}^{\mathrm N}_{\phi,i,j}\big|_U.
+$$
 
 这就给出所述统一距离间隙。$\square$
+
+</div>
+
+
+
+<div data-mb-solution="oet-26f07c9226b0ce42" data-mb-for="oet-fc424fbae1afcbdc">
 
 **习题 3.3 的解答**：
 
 **(i)** $d_i$ 的零距关系由绝对值相等确定。恒等算子在 $U$ 上的计算纤维分划为
 
-$$\bigl\{\{-3\},\{-2,2\},\{0\}\bigr\}.$$
+$$
+\bigl\{\{-3\},\{-2,2\},\{0\}\bigr\}.
+$$
 
 由
 
-$$\phi(-3)=-2,\qquad \phi(-2)=-1,\qquad \phi(0)=1,\qquad \phi(2)=3,$$
+$$
+\phi(-3)=-2,\qquad \phi(-2)=-1,\qquad \phi(0)=1,\qquad \phi(2)=3,
+$$
 
 得到 $\phi$ 在 $U$ 上的计算纤维分划为
 
-$$\bigl\{\{-3\},\{-2,0\},\{2\}\bigr\}.$$
+$$
+\bigl\{\{-3\},\{-2,0\},\{2\}\bigr\}.
+$$
 
 两种分划均有三个类，但
 
@@ -246,19 +338,31 @@ $$
 
 **(ii)** 在输入端，$0$ 到 $U$ 中其余点的距离至少为 $2$，故任何半径 $\tfrac32$ 的内覆盖都必须以 $0$ 为一个中心，且至少还需一个中心。取中心 $0,-2$ 即可覆盖 $U$，所以
 
-$$\mathcal N_i(\tfrac32,U)=2.$$
+$$
+\mathcal N_i(\tfrac32,U)=2.
+$$
 
 输出端为 $\phi(U)=\{-2,-1,1,3\}$。这些点到中心 $-2$ 的距离分别为 $0,1,1,1$，故
 
-$$\mathcal N_i(\tfrac32,\phi(U))=1.$$
+$$
+\mathcal N_i(\tfrac32,\phi(U))=1.
+$$
 
 于是
 
-$$\Delta E_{\frac32,i}(\phi\mid U)=\log_2 2-\log_2 1=1.$$
+$$
+\Delta E_{\frac32,i}(\phi\mid U)=\log_2 2-\log_2 1=1.
+$$
 
 输入与输出的覆盖熵分别为 $1$ 和 $0$。与此同时，一对点由零距变成正距，另一对点由正距变成零距；输出覆盖熵为零也没有使三个计算纤维合为一个。$\square$
 
 本题中的平移没有保持所选伪度量。映射熵差比较的是指定规范与精度下的覆盖数，其符号不能单独判定计算纤维分划的粗细，也不能概括所有点对距离的变化。
+
+</div>
+
+
+
+<div data-mb-solution="oet-bb4f6d46253f5edb" data-mb-for="oet-7ade05e895653cab">
 
 **习题 3.4 的解答**：
 
@@ -284,6 +388,12 @@ d(f(0),f(2))=2>0.
 $$
 
 这里的正零化半径来自输入域中的距离间隙：半径不超过 $2$ 的开球在 $D$ 中只含相应基点，并不要求两个不同输入的输出零距。同一算子在四个输入域上得到不同的阈值组合，说明这些读出必须连同所用输入域一起考察。$\square$
+
+</div>
+
+
+
+<div data-mb-solution="oet-e7bd21288ddb2bde" data-mb-for="oet-aba6bee391edd367">
 
 **习题 3.5 的解答**：
 
@@ -324,7 +434,13 @@ $$
 
 真实的两个像集覆盖数都为 $2$。前一个估计达到真实值，后一个估计并不紧。两个算子的像集及全部尺度的覆盖数完全一致，但输入与输出的对应不同，最小 Lip 常数也不同。因此，像集覆盖数描述输出集合在指定精度下需要多少中心，并不记录输出随输入顺序的往复变化。$\square$
 
+</div>
+
+
 ### 算子链演算
+
+
+<div data-mb-solution="oet-9bee8ae73f2048ff" data-mb-for="oet-51ab39dbe6ea409d">
 
 **习题 4.1 的解答**：
 
@@ -394,7 +510,13 @@ $$
 
 因此，每对不同点的迭代距离都趋于无穷，尽管全域上不存在谱半径大于 $1$ 的单分量 co-Lip 证书。这里，每个固定点对都有自己的大于 $1$ 的增长率，但这些增长率在初始距离趋于零时可以任意接近 $1$。$\square$
 
-两问分别使用了最小的 Lip 证书和最大的 co-Lip 证书，差距并非来自任意放松证书。谱条件给出充分保证（参见 命题 4.5）；这些条件不满足时，仍需考察实际像域、具体点对或多步作用，不能据此反推相反的迭代行为。
+两问分别使用了最小的 Lip 证书和最大的 co-Lip 证书，差距并非来自任意放松证书。谱条件给出充分保证（参见 [命题 4.5](<04-operator-chain-calculus.md#user-content-oet-cb1aac0882bde4ae>)）；这些条件不满足时，仍需考察实际像域、具体点对或多步作用，不能据此反推相反的迭代行为。
+
+</div>
+
+
+
+<div data-mb-solution="oet-92845f1b79fdc073" data-mb-for="oet-0ff7986894ec9221">
 
 **习题 4.2 的解答**：
 
@@ -422,9 +544,15 @@ r^{\mathrm N}_0
 r^{\mathrm N}_{\phi_m,i^*,j^*}(c_{m-1}(x)\mid U_m).
 $$
 
-由零化半径定义（§ 3.3），第 $m$ 步在输出分量 $j^*$ 上将该点对归零，即 $d_{j^*}(c_m(x),c_m(x'))=0$。$\square$
+由零化半径定义（[§ 3.3](<03-operator-local-degeneracy.md#user-content-oet-bb1487a09d8bf151>)），第 $m$ 步在输出分量 $j^*$ 上将该点对归零，即 $d_{j^*}(c_m(x),c_m(x'))=0$。$\square$
 
 把 $x$ 与 $x'$ 看作初始状态及其扰动状态，本题说明：在所给条件下，初始扰动沿链传播后，从某一步起在指定输出伪度量下变得不可分辨。
+
+</div>
+
+
+
+<div data-mb-solution="oet-f52ddbdb4056399a" data-mb-for="oet-b7e77b504317782a">
 
 **习题 4.3 的解答**：
 
@@ -454,7 +582,13 @@ $$
 
 其中最后一步由 $k^*=\lceil e_1/\delta\rceil$ 得出。因此 $E_{\varepsilon,i}(U_{k^*+1})=0$，取 $m=k^*+1$ 即得结论。$\square$
 
+</div>
+
+
 ### 算子网络
+
+
+<div data-mb-solution="oet-ec0a45eb2c508cb8" data-mb-for="oet-96bb1a4734f21c32">
 
 **习题 5.1 的解答**：
 
@@ -487,6 +621,12 @@ $$
 
 其他节点序列的路径域为空。$\square$
 
+</div>
+
+
+
+<div data-mb-solution="oet-2316b12692553c3b" data-mb-for="oet-171f4e850e8f1c36">
+
 **习题 5.2 的解答**：
 
 取 $\mathcal X=\{\bot,a,b,c\}$，四点互异，正常点间可取离散距离。取两个节点 $\alpha,\beta$，局域算子为
@@ -517,6 +657,12 @@ U_\alpha^{\mathrm{eff}}=\{a\},
 $$
 
 有效约化保留两个节点及其入口片，将局域算子分别限制为 $\mathrm{id}_{\mathcal X}|_{\{a\}}$、$\mathrm{id}_{\mathcal X}|_{\{b\}}$。两条有效边域均为空，故不再记录边；有效终止域仍分别为 $\{a\}$、$\{b\}$。所得无边图无环。$\square$
+
+</div>
+
+
+
+<div data-mb-solution="oet-306970c6d8944d2e" data-mb-for="oet-ff997c4726870929">
 
 **习题 5.3 的解答**：
 
@@ -574,6 +720,12 @@ $$
 
 外延算子也相同。原网络的两条路径共享末节点 $\gamma$，复制后的两条路径使用不同末节点。标记表达的同构要求同一全局节点重命名保持标签共享关系；原网络有三个节点，复制后有四个节点，不存在这样的节点双射。因此两网不有效等价。$\square$
 
+</div>
+
+
+
+<div data-mb-solution="oet-3cc7030ed4bca738" data-mb-for="oet-b3e92d181e7139bd">
+
 **习题 5.4 的解答**：
 
 两个节点的定义域均为 $\mathbb R$，像分别为 $\{0\}$、$\{1\}$。两个非空入口片分划
@@ -604,6 +756,12 @@ $$
 $$
 
 选择整数 $n>\max\{2,2L\}$ 即得矛盾。因此，路径内的有限 Lip 上界不足以控制跨路径点对。$\square$
+
+</div>
+
+
+
+<div data-mb-solution="oet-487efe0b30cd3fb1" data-mb-for="oet-082bb5a4fb2472b9">
 
 **习题 5.5 的解答**：
 
@@ -641,9 +799,15 @@ $$
 
 可知终止域在第二次约化中保持不变。节点集、局域算子、入口片、边集与边域全部相同，所以 $\mathcal M^{\mathrm{eff}}=\mathcal M$。$\square$
 
+</div>
+
+
+
+<div data-mb-solution="oet-f301458f635b5a6f" data-mb-for="oet-8570ea1bf1a8708b">
+
 **习题 5.6 的解答**：
 
-**(i)** 由 命题 5.16 的证明，每步都有
+**(i)** 由 [命题 5.16](<05-operator-networks.md#user-content-oet-2498621c42325300>) 的证明，每步都有
 
 $$
 M(\mathcal N_{j+1})+1\le M(\mathcal N_j).
@@ -675,7 +839,13 @@ $$
 
 这对自然数 $r(e)$ 不可能成立。可见固定网络的有限求值并不提供表示加细的终止证书。$\square$
 
+</div>
+
+
 ### 分离规范特化
+
+
+<div data-mb-solution="oet-b513dd0ddd9bb63f" data-mb-for="oet-218697f5beb9e317">
 
 **习题 A.1 的解答**：
 
@@ -711,6 +881,12 @@ K\le t=K/2,
 $$
 
 矛盾。因此 $K=0$；反之，$K=0$ 显然满足全部 co-Lip 不等式。单射性并不保证存在正的统一 co-Lip 下界，故 **(i)** 的正通道条件也不是必要条件。$\square$
+
+</div>
+
+
+
+<div data-mb-solution="oet-284115228e66da7c" data-mb-for="oet-93e134ff76be8bc0">
 
 **习题 A.2 的解答**：
 
@@ -758,6 +934,12 @@ $$
 
 第一例有任意正尺度的有限覆盖和逐点正半径，却没有统一正半径；第二例有统一正半径，却没有同一半径下的有限覆盖。两者分别说明题述有限像结论的两个条件不能按题中方式削弱或删去。$\square$
 
+</div>
+
+
+
+<div data-mb-solution="oet-7e21c861157c9002" data-mb-for="oet-38e12b6f9364127f">
+
 **习题 A.3 的解答**：
 
 **(i)** 先设统一零化半径为 $+\infty$。它是各基点零化半径的下确界，故每个 $y\in U$ 均有 $r^{\mathrm N}_{f,d_I,I}(y\mid U)=+\infty$。任取 $x,y\in U$ 且 $d_I(x,y)<+\infty$，由半径的上确界定义，存在合法的有限正半径 $r>d_I(x,y)$。于是 $x\in B_I(y,r)\cap U$，故
@@ -776,9 +958,15 @@ $$
 
 任意有限半径的球都只有球心，因此恒等算子在每个这样的球与 $U$ 的交上为常值。每个基点的零化半径以及统一零化半径均为 $+\infty$，但 $f(a)=a\ne b=f(b)$。这不违反 **(i)**：点对 $(a,b)$ 的距离为 $+\infty$，不在其中的有限距离条件内。$\square$
 
+</div>
+
+
 ### 有限维实坐标模型
 
-本节的实矩阵运算沿用 § B.2 中的有限条目识别约定。
+本节的实矩阵运算沿用 [§ B.2](<appendix-b-finite-dimensional-coordinate-model.md#user-content-oet-a81f07d81e16c501>) 中的有限条目识别约定。
+
+
+<div data-mb-solution="oet-a1e02f0ce54cbc38" data-mb-for="oet-1873ded007b293ec">
 
 **习题 B.1 的解答**：
 
@@ -791,6 +979,12 @@ d_{\mathrm{Euc}}(x,y)^2
 $$
 
 和式包含 $|\operatorname{supp}(x-y)|$ 个非零项，每项不超过 $d_I(x,y)^2$，故取平方根得到第二式。$\square$
+
+</div>
+
+
+
+<div data-mb-solution="oet-398de9e7403804ea" data-mb-for="oet-f09514ceb9b32a5a">
 
 **习题 B.2 的解答**：
 
@@ -815,7 +1009,7 @@ $$
 
 最后一步利用平方和至多有 $m$ 个非零项，每项不超过 $L_{\max}^2$。取平方根，再对单位向量取上确界，便得欧氏算子范数界；这一论证也包括 $m=0$ 的零矩阵情形。
 
-**(ii)** 由 命题 B.6，
+**(ii)** 由 [命题 B.6](<appendix-b-finite-dimensional-coordinate-model.md#user-content-oet-5386499e20ce893d>)，
 
 $$
 d_{\mathrm{Euc}}(\phi(x),\phi(y))
@@ -823,6 +1017,12 @@ d_{\mathrm{Euc}}(\phi(x),\phi(y))
 $$
 
 代入 **(i)** 的欧氏算子范数界即可。$\square$
+
+</div>
+
+
+
+<div data-mb-solution="oet-f10025224540eb02" data-mb-for="oet-661612e2b84e7cff">
 
 **习题 B.3 的解答**：
 
@@ -836,11 +1036,17 @@ $$
 
 取 $u=e_1$ 时 $\|u\|_2=1$ 且上式取等号，故 $\|\mathbf B_n\|_{2\to2}=\sqrt n$。当 $n\to\infty$ 时，非零比例趋于零，欧氏算子范数却趋于无穷。
 
-这里每个输出分量只接收同一个输入分量，最大分量放大始终为 $1$；欧氏范数则累加了 $n$ 个输出分量的平方。推论 B.7 控制的是最大范数，因此与本例一致。$\square$
+这里每个输出分量只接收同一个输入分量，最大分量放大始终为 $1$；欧氏范数则累加了 $n$ 个输出分量的平方。[推论 B.7](<appendix-b-finite-dimensional-coordinate-model.md#user-content-oet-36ae8406e21d3213>) 控制的是最大范数，因此与本例一致。$\square$
+
+</div>
+
+
+
+<div data-mb-solution="oet-5afd1eb9ec42078b" data-mb-for="oet-4f0e5a8aa7221640">
 
 **习题 B.4 的解答**：
 
-**(i)** 当 $x-y\in V_a$ 时，对 $c\ne a$ 有 $P_c(x-y)=0$，而 $P_a(x-y)=x-y$。将此代入 命题 B.9 的不等式，得到
+**(i)** 当 $x-y\in V_a$ 时，对 $c\ne a$ 有 $P_c(x-y)=0$，而 $P_a(x-y)=x-y$。将此代入 [命题 B.9](<appendix-b-finite-dimensional-coordinate-model.md#user-content-oet-460dce986b592798>) 的不等式，得到
 
 $$
 \|P_b(F(x)-F(y))\|_2
@@ -860,6 +1066,12 @@ $$
 
 这就得到第二部分。$\square$
 
+</div>
+
+
+
+<div data-mb-solution="oet-7d0cea475a47b225" data-mb-for="oet-ad5d1c84e576f84a">
+
 **习题 B.5 的解答**：
 
 按上述约定，将有限 Lip 矩阵不等式读作实数不等式，得到
@@ -871,6 +1083,12 @@ d_j(\phi(x),\phi(y))
 $$
 
 当 $i\notin \operatorname{supp}_j(\mathbf L)$ 或 $i\notin\operatorname{supp}(x-y)$ 时，对应项为零。其余每一项不超过 $L_{\max}d_I(x,y)$，故第一式成立。再对 $j$ 取最大值得第二式。$\square$
+
+</div>
+
+
+
+<div data-mb-solution="oet-437f5f735cb4fcf7" data-mb-for="oet-ac7cdc1d2ab36d93">
 
 **习题 B.6 的解答**：
 
@@ -896,6 +1114,12 @@ $$
 
 最后核对恒等分量定义中的常值排除条件。由于 $U$ 开且 $x_0\in U$，存在 $\delta>0$ 使 $x_0+\delta e_j\in U$。这两点的第 $j$ 坐标相差 $\delta$，所以坐标函数 $x\mapsto x_j$ 在 $U$ 上不是常值。于是 $F_j(x)=x_j$ 同时给出逐点的第 $j$ 分量零距和非常值性，恰好等价于 $j\in I_{\mathrm{id}}(\phi_F\mid U)$。$\square$
 
+</div>
+
+
+
+<div data-mb-solution="oet-a6e44fe8709f399e" data-mb-for="oet-291a10c8f6ac11cb">
+
 **习题 B.7 的解答**：
 
 由 $F(s,t)=F(y_1,y_2)$ 当且仅当 $s=y_1$，得到
@@ -904,13 +1128,19 @@ $$
 F^{-1}(F(y))=\{(y_1,t):t\in\mathbb R\}.
 $$
 
-线性部分 $T=\operatorname{diag}(1,0)\ne0$，由 命题 B.14 的 (ii)，
+线性部分 $T=\operatorname{diag}(1,0)\ne0$，由 [命题 B.14](<appendix-b-finite-dimensional-coordinate-model.md#user-content-oet-055e3702cf9c3930>) 的 (ii)，
 
 $$
 r^{\mathrm N}_{\phi_F,d_I,I}(y\mid\mathbb R^2)=0.
 $$
 
 纤维允许第二个坐标任意变化，却要求第一个坐标固定。任意 $r>0$ 的全族输入球中都包含点 $x=(y_1+r/2,y_2)$，它满足 $\|x-y\|_\infty=r/2<r$，但 $F(x)\ne F(y)$。因此该直线不包含任何以 $y$ 为中心的全族输入小球。$\square$
+
+</div>
+
+
+
+<div data-mb-solution="oet-69a2b7cc4abd53c5" data-mb-for="oet-ef39fb9c4b025f07">
 
 **习题 B.8 的解答**：
 
@@ -942,7 +1172,7 @@ $$
 \left(\prod_{t=m+1}^k\alpha_t\right)\|r^{(m)}\|_\infty.
 $$
 
-其中 $m=k$ 时不再经过任何矩阵，故空标量乘积为 $1$。由矩阵条目非负，其 $\ell^\infty$ 算子范数等于最大行和；每行至多含 $s_m$ 个非零条目，每个条目不超过 $\lambda_m$。因此，按 推论 B.7，
+其中 $m=k$ 时不再经过任何矩阵，故空标量乘积为 $1$。由矩阵条目非负，其 $\ell^\infty$ 算子范数等于最大行和；每行至多含 $s_m$ 个非零条目，每个条目不超过 $\lambda_m$。因此，按 [推论 B.7](<appendix-b-finite-dimensional-coordinate-model.md#user-content-oet-36ae8406e21d3213>)，
 
 $$
 \alpha_m
@@ -991,8 +1221,14 @@ $$
 
 $\square$
 
+</div>
+
+
 
 ### 有限维算子网络
+
+
+<div data-mb-solution="oet-ffff5f45b5825156" data-mb-for="oet-b3f71b0e8b87fbf0">
 
 **习题 C.1 的解答**：
 
@@ -1033,6 +1269,12 @@ $$
 
 该指数来自每条路径线性像的维数：输入域虽然是二维的，每条路径的输出却被限制在一条直线上。$\square$
 
+</div>
+
+
+
+<div data-mb-solution="oet-d3860e268be11fe1" data-mb-for="oet-84ef8daaa0e28176">
+
 **习题 C.2 的解答**：
 
 **(i)** 对 $(s,0)\in U$，有 $F(s,0)=G(s,0)=(s,0)$。两扩展的导数分别为
@@ -1050,13 +1292,19 @@ $$
 W_U=\mathbb R\times\{0\}.
 $$
 
-$DF$ 与 $DG$ 在这个空间上都把 $(a,0)$ 映为 $(a,0)$，因此两个限制映射相同，秩均为 $1$。由 推论 C.7 得到的覆盖指数均为 $1$；二者的全空间算子范数也都为 $1$，所以取相同中心、半径时给出相同上界。共同输出集合为 $F(U)=G(U)=U$。
+$DF$ 与 $DG$ 在这个空间上都把 $(a,0)$ 映为 $(a,0)$，因此两个限制映射相同，秩均为 $1$。由 [推论 C.7](<appendix-c-finite-dimensional-operator-networks.md#user-content-oet-c9e4b6fb4f7e4e59>) 得到的覆盖指数均为 $1$；二者的全空间算子范数也都为 $1$，所以取相同中心、半径时给出相同上界。共同输出集合为 $F(U)=G(U)=U$。
 
-若改用整个矩阵的秩，两个指数会分别为 $1$ 与 $2$，后一估计仍有效但较宽。实际路径域未包含的第二坐标方向的变化影响扩展矩阵的秩，却不改变 引理 B.13 所确定的受限秩。$\square$
+若改用整个矩阵的秩，两个指数会分别为 $1$ 与 $2$，后一估计仍有效但较宽。实际路径域未包含的第二坐标方向的变化影响扩展矩阵的秩，却不改变 [引理 B.13](<appendix-b-finite-dimensional-coordinate-model.md#user-content-oet-5327d971cf04c4ca>) 所确定的受限秩。$\square$
+
+</div>
+
+
+
+<div data-mb-solution="oet-cf84f3e370e7d17c" data-mb-for="oet-64877d77e522a25b">
 
 **习题 C.3 的解答**：
 
-**(i)** 对 推论 C.2 证明中的有限和使用三角不等式，再对每个通路项逐次使用欧氏算子范数的次乘性，得到
+**(i)** 对 [推论 C.2](<appendix-c-finite-dimensional-operator-networks.md#user-content-oet-f8dabd5aec160cd3>) 证明中的有限和使用三角不等式，再对每个通路项逐次使用欧氏算子范数的次乘性，得到
 
 $$
 \begin{aligned}
@@ -1088,6 +1336,12 @@ $$
 
 这解释了 $BA=0$。这里没有不同通路之间的相消：唯一通路上的两个非零块映射，其复合本身就是零。逐步非零条件没有记录前一步像空间与后一步核空间的相对位置。$\square$
 
+</div>
+
+
+
+<div data-mb-solution="oet-a53439ed4ddb2041" data-mb-for="oet-b3af1b7e2f078cb4">
+
 **习题 C.4 的解答**：
 
 **(i)** 域内点差均与 $(1,1)$ 共线，且存在非零点差，所以
@@ -1104,7 +1358,7 @@ $$
 
 因此常值分量集合恰为 $\{1\}$。第一行虽然非零，但实际域只允许沿对角线变化，而该行在这个方向上消失。
 
-**(ii)** 两个输入坐标的取值范围均为 $[-1,1]$，直径均为 $2$。该发生域非空且凸，由 命题 B.14 的 (ii)，对任意 $i\in\{1,2\}$ 有
+**(ii)** 两个输入坐标的取值范围均为 $[-1,1]$，直径均为 $2$。该发生域非空且凸，由 [命题 B.14](<appendix-b-finite-dimensional-coordinate-model.md#user-content-oet-055e3702cf9c3930>) 的 (ii)，对任意 $i\in\{1,2\}$ 有
 
 $$
 \underline{r}^{\mathrm N}_q(i,1)=+\infty,
@@ -1112,7 +1366,7 @@ $$
 \underline{r}^{\mathrm N}_q(i,2)=0.
 $$
 
-取两个阈值均为 $1$，按照 § 5.5 的定义得到
+取两个阈值均为 $1$，按照 [§ 5.5](<05-operator-networks.md#user-content-oet-4b1389b158d2780e>) 的定义得到
 
 $$
 \operatorname{Type}_q(i,1)=(0,1),
@@ -1121,3 +1375,5 @@ $$
 $$
 
 发生域在 $\mathbb R^2$ 中没有内点，不能把受限行的零性替换为整行的零性；否则会误判第一个输出分量。$\square$
+
+</div>

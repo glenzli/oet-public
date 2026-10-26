@@ -2,6 +2,7 @@
 
 **当前发布：第一卷《规范空间与算子》 · v1.0.0 · 中文**
 
+- **在线阅读**：[第一卷网页版](https://glenzli.com/books/oet/)（目录、公式、插图与习题解答跳转）
 - **PDF 阅读与下载**：[在线阅读（GitLab）](https://gitlab.com/glenzli/oet-public/-/releases/oet-vols-01-v1.0.0/downloads/oet-vols-01-v1.0.0-publication.pdf) · [GitHub 下载](https://github.com/glenzli/oet-public/releases/download/oet-vols-01-v1.0.0/oet-vols-01-v1.0.0-publication.pdf) · [Zenodo 下载](https://zenodo.org/records/21457931/files/oet-vols-01-v1.0.0-publication.pdf)
 - **第一卷完整 Lean 工程**：[GitHub 下载](https://github.com/glenzli/oet-public/releases/download/oet-vols-01-v1.0.0/oet-vols-01-v1.0.0-lean-prefix-source.tar.gz) · [GitLab 下载](https://gitlab.com/glenzli/oet-public/-/releases/oet-vols-01-v1.0.0/downloads/oet-vols-01-v1.0.0-lean-prefix-source.tar.gz) · [构建说明](the-operator-evolution-theory/formal-oet/README.md)
 - **Zenodo 本版存档与引用**：[10.5281/zenodo.21457931](https://doi.org/10.5281/zenodo.21457931) · [引用格式](CITATION.zh-CN.md)
@@ -18,8 +19,10 @@
 
 ## 源码与验证
 
-- [正文 Markdown](the-operator-evolution-theory/)：便于检索与查看源码；连续阅读建议使用上方 PDF。
+- [正文 Markdown](the-operator-evolution-theory/)：便于检索与查看源码；连续阅读可使用上方网页版或 PDF。
 - [Lean 4 工程](the-operator-evolution-theory/formal-oet/)：包含本次发布范围内的项目源码、工具链与依赖锁定文件和构建说明。首次构建需要联网取得工具链与外部依赖，不需要 Math Workspace 或未公开的后续卷。
+
+网页版及当前仓库补齐了第一卷的四张插图，并恢复了正文引用与习题解答跳转。v1.0.0 原始源码压缩包遗漏了这四张图，已封存的 PDF 中图片完整；原始发布文件与标签保持不变，详见[阅读包说明](release/README.md#web-reading-companion)。
 
 本版公开 Lean 工程已完整构建通过。协作与审阅方式见 [AI 参与及责任说明](AI-PARTICIPATION-SUMMARY.md)。
 

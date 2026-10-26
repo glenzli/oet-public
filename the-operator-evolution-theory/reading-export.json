@@ -1,0 +1,37 @@
+{
+  "schema": "oet-reading-export/v1",
+  "sourceTag": "oet-vols-01-v1.0.0",
+  "sourceCommit": "853f37a8e0566d3e3c8ed540d34bb88f14c22f3d",
+  "versionDoi": "10.5281/zenodo.21457931",
+  "mathWorkspaceCliSha256": "57090be88bf4335094c87b56a31e32097e4c1ba63941d517daa16cc7909b12b2",
+  "originalPages": 18,
+  "navigationReferences": 386,
+  "exercises": 34,
+  "solutions": 34,
+  "baselineSha256": {
+    "front-matter/00-preface.md": "0c9ec005f1a9cd5373d72f07a14279a852b0d93f2acbdb313be435d881a52d15",
+    "front-matter/01-acknowledgments.md": "3a16817f7735f4d378df37b51f48113cc3a3d0feb05ed26bff7a6a0bed48abe3",
+    "front-matter/02-ai-participation.md": "886b2bd83d051c379ae4b5e1de6089ea59e719d0ff505ba23ac7a8d126c236de",
+    "vol-01-gauge-spaces-and-operators/00-introduction.md": "1f539725e798bbda0a4cdba91f30bd66f3094a32fa1cda867a03b7965fb53570",
+    "vol-01-gauge-spaces-and-operators/01-foundations.md": "4f82f1dd6ac4cc818a5ccae7229606cc435565cd80ce8efc73a1a87cd3122c97",
+    "vol-01-gauge-spaces-and-operators/02-operator-bounds.md": "3b63a8636faf4b76e25deb145f14bf291ccc9957a4d393353cebc309da721f22",
+    "vol-01-gauge-spaces-and-operators/03-operator-local-degeneracy.md": "cfc58851189b4d88e301bb25bdfb6b9354d99ddadc08c963ba372691dda9dca1",
+    "vol-01-gauge-spaces-and-operators/04-operator-chain-calculus.md": "5f90a81ca7ebd04ce2a109da46ac69bae8e6122b3e2240c34ebd7b4eddf2c083",
+    "vol-01-gauge-spaces-and-operators/05-operator-networks.md": "83fce6e7d3b53f7f62c32633f48f5210b145e4408adfc161d4b469adc3353e86",
+    "vol-01-gauge-spaces-and-operators/summary.md": "d9b41646a521c6f99563e39b7cec941a4b84e626a4e47d97ae9d1237cc0605b4",
+    "vol-01-gauge-spaces-and-operators/appendix-a-separating-gauge-specialization.md": "f3223c25d47ef10bd8380690285b8bfda36bd5ecb20dced273fbe2495026fe34",
+    "vol-01-gauge-spaces-and-operators/appendix-b-finite-dimensional-coordinate-model.md": "6667d939def3e524ff131b07ba530297097a63e3eaef6f3f2d710c976a942a27",
+    "vol-01-gauge-spaces-and-operators/appendix-c-finite-dimensional-operator-networks.md": "a23477b7ef9cb97d3f1a011899fb086ec498e14f871147c5653985df5c7ff604",
+    "vol-01-gauge-spaces-and-operators/appendix-d-exercise-solutions.md": "9b1d53ef334a210d9f4f904fa832edeab75c96bfeffeee6eed20305c2c732d15",
+    "vol-01-gauge-spaces-and-operators/appendix-e-symbols.md": "85f6bdc5efbfee3e8b243bdf98f68a5180d8a77e57299de8033293d29fc96a60",
+    "vol-01-gauge-spaces-and-operators/appendix-f-concepts.md": "baee302a4980b66df027a66e576aa4facf192d78e6c1aaf7eeb58f06b4b6924b",
+    "back-matter/01-historical-model-messages.md": "955ac29be346c3ddba16a488b1d7ddb7afbb0c160b8cc12969fa49906f5a7097",
+    "to-be-continued.md": "40d06c57598618f3bfd9e7008cfbca449d4b84282a635ddcaae3e5144adf906b"
+  },
+  "staticResourceSha256": {
+    "vol-01-gauge-spaces-and-operators/figures/operator-networks/structure.png": "8a6592d71d636b095ac79e18048bee35177be56d59fdcbdf14b61b5bd825c6b9",
+    "vol-01-gauge-spaces-and-operators/figures/operator-networks/transfer.png": "2587253746ba14fad0527124c91f8b4faebce2b34e52463a4c696ce1cc2627d5",
+    "vol-01-gauge-spaces-and-operators/figures/operator-networks/network.png": "0e34dc2bae1ae60e88aa87c9067c000832d766c6647c6821f7936888e2751e44",
+    "vol-01-gauge-spaces-and-operators/figures/operator-networks/paths.png": "43c7a1bb3eb13cc530b3107ff75f8efa48202649b5990c42ddb2675df7202dc5"
+  }
+}

@@ -107,3 +107,22 @@ scripts/release/oet-release-record-concept-doi.sh \
 Commit `release/concept-doi.txt` and the updated `README.md`. Later release
 imports preserve this file and add the all-versions DOI to generated README
 snapshots automatically.
+
+## Web reading companion
+
+The website consumes the Markdown Book rooted at
+`the-operator-evolution-theory/book.json` from an exact public repository commit.
+It is a reading companion for the published edition, not a replacement for the
+immutable release archives. The site records the source commit and its input and
+output file hashes.
+
+For Volume I v1.0.0, the original public-source archive omitted the four PNG
+figures referenced by Chapter 5. The published PDF includes all four figures.
+The reading companion and the current public source tree restore those exact
+images from the signed private source tag, normalize multiline display-math
+delimiters, and add chapter references and exercise/solution navigation. The
+mathematical text and the published Lean project are unchanged.
+
+The source tag, DOI, signed release manifest, and uploaded v1.0.0 files remain
+unchanged. The reading companion identifies its edition on the final
+“版本与引用” page; cite the edition's version DOI for its mathematical content.

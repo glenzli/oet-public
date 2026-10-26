@@ -1,0 +1,114 @@
+{
+  "formatVersion": 1,
+  "id": "oet",
+  "title": "算子演化论：第一卷",
+  "description": "规范空间与算子。第一卷 v1.0.0 中文版网页阅读配套。",
+  "author": "Zhe Li",
+  "language": "zh-CN",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "source": {
+    "repository": "https://github.com/glenzli/oet-public",
+    "path": "the-operator-evolution-theory"
+  },
+  "chapters": [
+    {
+      "id": "preface",
+      "title": "写在前面",
+      "file": "front-matter/00-preface.md"
+    },
+    {
+      "id": "acknowledgments",
+      "title": "致谢",
+      "file": "front-matter/01-acknowledgments.md"
+    },
+    {
+      "id": "ai-participation",
+      "title": "AI 参与及责任说明",
+      "file": "front-matter/02-ai-participation.md"
+    },
+    {
+      "id": "introduction",
+      "title": "卷 I：规范空间与算子",
+      "file": "vol-01-gauge-spaces-and-operators/00-introduction.md"
+    },
+    {
+      "id": "foundations",
+      "title": "第 1 章 基础",
+      "file": "vol-01-gauge-spaces-and-operators/01-foundations.md"
+    },
+    {
+      "id": "operator-bounds",
+      "title": "第 2 章 算子界",
+      "file": "vol-01-gauge-spaces-and-operators/02-operator-bounds.md"
+    },
+    {
+      "id": "operator-local-degeneracy",
+      "title": "第 3 章 算子局部退化",
+      "file": "vol-01-gauge-spaces-and-operators/03-operator-local-degeneracy.md"
+    },
+    {
+      "id": "operator-chain-calculus",
+      "title": "第 4 章 算子链演算",
+      "file": "vol-01-gauge-spaces-and-operators/04-operator-chain-calculus.md"
+    },
+    {
+      "id": "operator-networks",
+      "title": "第 5 章 算子网络",
+      "file": "vol-01-gauge-spaces-and-operators/05-operator-networks.md"
+    },
+    {
+      "id": "summary",
+      "title": "总结",
+      "file": "vol-01-gauge-spaces-and-operators/summary.md"
+    },
+    {
+      "id": "appendix-a-separating-gauge-specialization",
+      "title": "附录 A 分离规范空间",
+      "file": "vol-01-gauge-spaces-and-operators/appendix-a-separating-gauge-specialization.md"
+    },
+    {
+      "id": "appendix-b-finite-dimensional-coordinate-model",
+      "title": "附录 B 有限维实坐标模型",
+      "file": "vol-01-gauge-spaces-and-operators/appendix-b-finite-dimensional-coordinate-model.md"
+    },
+    {
+      "id": "appendix-c-finite-dimensional-operator-networks",
+      "title": "附录 C 有限维算子网络",
+      "file": "vol-01-gauge-spaces-and-operators/appendix-c-finite-dimensional-operator-networks.md"
+    },
+    {
+      "id": "appendix-d-exercise-solutions",
+      "title": "附录 D 习题解答",
+      "file": "vol-01-gauge-spaces-and-operators/appendix-d-exercise-solutions.md"
+    },
+    {
+      "id": "appendix-e-symbols",
+      "title": "附录 E 符号表",
+      "file": "vol-01-gauge-spaces-and-operators/appendix-e-symbols.md"
+    },
+    {
+      "id": "appendix-f-concepts",
+      "title": "附录 F 核心概念表",
+      "file": "vol-01-gauge-spaces-and-operators/appendix-f-concepts.md"
+    },
+    {
+      "id": "historical-model-messages",
+      "title": "历史参与模型寄语",
+      "file": "back-matter/01-historical-model-messages.md"
+    },
+    {
+      "id": "to-be-continued",
+      "title": "未完待续",
+      "file": "to-be-continued.md"
+    },
+    {
+      "id": "version-and-citation",
+      "title": "版本与引用",
+      "file": "back-matter/02-version-and-citation.md"
+    }
+  ],
+  "components": {}
+}
