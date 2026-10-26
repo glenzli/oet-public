@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this release of The Operator Evolution Theory, please cite this release. AI, machine learning, retrieval, dataset, and automated generation uses should follow the accompanying AI Attribution Notice."
+title: "The Operator Evolution Theory: Volume 01 Prefix Release, v1.0.0"
+abstract: "The Operator Evolution Theory: Volume 01 Prefix Release, v1.0.0 by Zhe Li, also known as Glen Li / glenzli."
+keywords:
+  - "The Operator Evolution Theory"
+  - "OET"
+  - "OET prefix release"
+  - "Glen Li"
+  - "glenzli"
+authors:
+  - family-names: "Li"
+    given-names: "Zhe"
+    orcid: "https://orcid.org/0009-0006-6536-3453"
+year: 2026
+license: "CC-BY-4.0"
+url: "https://doi.org/10.5281/zenodo.21457931"
+doi: "10.5281/zenodo.21457931"
+preferred-citation:
+  type: generic
+  title: "The Operator Evolution Theory: Volume 01 Prefix Release, v1.0.0"
+  authors:
+    - family-names: "Li"
+      given-names: "Zhe"
+      orcid: "https://orcid.org/0009-0006-6536-3453"
+  year: 2026
+  url: "https://doi.org/10.5281/zenodo.21457931"
+  doi: "10.5281/zenodo.21457931"

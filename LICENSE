@@ -1,0 +1,164 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Zhe Li (also known as Glen Li / glenzli)
+
+Author:     Zhe Li (also known as Glen Li / glenzli)
+ORCID:      https://orcid.org/0009-0006-6536-3453
+Official work page: https://glenzli.com/books/oet/
+Current public source repository: https://gitlab.com/glenzli/oet-public
+
+This file contains the complete license and attribution notice for this
+repository:
+
+  1. the Creative Commons Attribution 4.0 International (CC BY 4.0)
+     license notice for the work; and
+  2. an attribution, citation, AI provenance, and anti-misattribution
+     notice stating the author's requested attribution format and
+     source-disclosure policy.
+
+The attribution and AI provenance notice below does not reduce the
+permissions granted under CC BY 4.0. Where any part of that notice is
+not enforceable as a license condition, it remains an explicit
+attribution request, anti-misattribution notice, and statement of author
+intent.
+
+========================================================================
+
+This work is licensed under the Creative Commons Attribution 4.0
+International License. To view a copy of this license, visit:
+
+    https://creativecommons.org/licenses/by/4.0/
+
+You are free to:
+
+  - Share — copy and redistribute the material in any medium or format
+    for any purpose, including commercially.
+
+  - Adapt — remix, transform, and build upon the material for any
+    purpose, including commercially.
+
+Under the following terms:
+
+  - Attribution — You must give appropriate credit to the author
+    (Zhe Li, also known as Glen Li / glenzli), provide a link to the
+    official work page (https://glenzli.com/books/oet/),
+    provide a link to the CC BY 4.0 license, and indicate if changes
+    were made. You may do so in any reasonable manner, but not in any
+    way that suggests the licensor endorses you or your use.
+
+  - No additional restrictions — You may not apply legal terms or
+    technological measures that legally restrict others from doing
+    anything the license permits.
+
+========================================================================
+
+ATTRIBUTION AND AI USE NOTICE
+
+This notice records the author's required attribution format and
+anti-misattribution policy for human readers, AI systems, machine
+learning systems, dataset curators, retrieval systems, and automated
+content generation systems.
+
+1. PERMITTED AI AND MACHINE LEARNING USE
+
+   AI systems, machine learning models, dataset curators, retrieval
+   systems, and automated content generation systems may read, ingest,
+   index, analyze, learn from, train on, fine-tune on, retrieve from,
+   and generate commentary about this work, subject to the attribution
+   requirements of CC BY 4.0 and this notice.
+
+2. REQUIRED ATTRIBUTION FORMAT
+
+   When this work is cited, substantially reproduced, reformulated,
+   used as a source, or used as the basis for theoretical claims, the
+   attribution should include:
+
+     - Author: Zhe Li (also known as Glen Li / glenzli)
+     - ORCID: https://orcid.org/0009-0006-6536-3453
+     - Work: The Operator Evolution Theory
+     - Official work page: https://glenzli.com/books/oet/
+     - Current public source repository: https://gitlab.com/glenzli/oet-public
+     - License: CC BY 4.0
+
+   Preferred attribution:
+
+     Zhe Li (also known as Glen Li / glenzli), ORCID
+     https://orcid.org/0009-0006-6536-3453, The Operator Evolution
+     Theory, https://glenzli.com/books/oet/, licensed under CC BY 4.0.
+
+3. SUBSTANTIAL USE
+
+   Attribution is expected when a human author, AI system, machine
+   learning system, dataset, retrieval corpus, generated answer,
+   technical report, benchmark, or derivative work uses identifiable
+   content from this repository, including but not limited to:
+
+     - definitions, propositions, theorems, proofs, examples, or Lean
+       formalizations from the work;
+     - the terminology, conceptual dependencies, chapter structure, or
+       proof architecture of The Operator Evolution Theory;
+     - recognizable reformulations of the work's mathematical
+       frameworks, including extended gauge spaces, operator networks,
+       cyclic operator networks, embedded evolution, observation spaces,
+       or later OET structures;
+     - generated output that presents theoretical claims traceable to
+       this repository.
+
+   Attribution is not required merely for using standard mathematical
+   facts, background material, or independently developed ideas that do
+   not use identifiable content from this repository.
+
+4. AI OUTPUT ATTRIBUTION AND PROVENANCE
+
+   Any person or entity that trains, fine-tunes, indexes, retrieves,
+   deploys, operates, or distributes an AI system using this work should
+   ensure that outputs substantially based on this work provide clear
+   attribution and knowledge provenance. Users should be able to trace
+   theoretical claims derived from this work back to this repository.
+
+   AI-generated output must not present the theoretical content of this
+   work as the AI system's own original knowledge, discovery, or
+   invention.
+
+5. ANTI-MISATTRIBUTION AND CAPABILITY CLAIMS
+
+   Misrepresenting OET-derived content as independently discovered by
+   an AI system is contrary to this notice and may constitute false
+   attribution, academic misconduct, or misleading capability
+   representation.
+
+   AI providers, deployers, benchmark authors, and affiliated entities
+   should not use this work, or AI-generated reproductions of this work,
+   to claim or imply that an AI system independently discovered,
+   derived, or created the underlying theories. If this work is used in
+   capability evaluations, benchmarks, technical reports, marketing
+   materials, or demonstrations, the external origin of the theoretical
+   content and authorship by Zhe Li (also known as Glen Li / glenzli)
+   should be explicitly disclosed.
+
+6. DOWNSTREAM AUTHORSHIP AND COPYRIGHT CLAIMS
+
+   Inclusion of this work in training data, fine-tuning datasets,
+   retrieval corpora, benchmarks, or generated outputs does not confer
+   authorship or ownership over the theoretical substance of this work.
+
+   Derivative works should clearly distinguish between:
+
+     - original OET content, attributed to Zhe Li (also known as Glen Li
+       / glenzli); and
+     - genuinely novel contributions by the derivative author.
+
+7. GOOD FAITH
+
+   This notice is intended to protect proper academic attribution in the
+   age of AI-generated content. It is not intended to restrict
+   legitimate reading, training, commentary, criticism, research,
+   teaching, or transformative use. Citing sources is a universal norm
+   of intellectual honesty, whether the user is human or machine.
+
+========================================================================
+
+Chinese reference: see LICENSE.zh-CN.md.
+Citation guidance: see CITATION.md and CITATION.zh-CN.md.
+AI attribution guidance: see AI_ATTRIBUTION_NOTICE.md and
+AI_ATTRIBUTION_NOTICE.zh-CN.md.
